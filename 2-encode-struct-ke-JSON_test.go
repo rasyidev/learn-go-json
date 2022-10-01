@@ -12,6 +12,7 @@ type Smartphone struct {
 	BatterySize       int
 	CPUClock          float32
 	ReleasedCountries []string
+	Credentials       []Credential
 }
 
 func TestEncodeStructToJSON(t *testing.T) {
