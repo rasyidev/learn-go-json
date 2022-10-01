@@ -7,10 +7,11 @@ import (
 )
 
 type Smartphone struct {
-	Name        string
-	Brand       string
-	BatterySize int
-	CPUClock    float32
+	Name              string
+	Brand             string
+	BatterySize       int
+	CPUClock          float32
+	ReleasedCountries []string
 }
 
 func TestEncodeStructToJSON(t *testing.T) {
