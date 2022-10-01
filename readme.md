@@ -26,3 +26,7 @@ type Product struct {
 }
 ```
 
+## Map
+- Alternatif dari Struct untuk representasi JSON yang dinamis
+- Menggunakan `map[string]interface{}`
+- Tidak mendukung JSON Tag
