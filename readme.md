@@ -13,3 +13,16 @@
 ## JSON Array
 - Direpresentasikan dalam bentuk slice
 - Proses konversi JSON ke Object maupun sebaliknya dilakukan oleh package json secara otomatis. Hasilnya berupa slice
+
+## JSON Tag
+- Atribut dalam Struct akan di-_mapping_ sama persis (_case sensitif_) menjadi nama atribut JSON
+- Jika ingin membuat nama atribut yang berbeda, dapat memanfaatkan tag reflection di dalam Struct. Contoh:
+```go
+type Product struct {
+  Id        string  `json:"id"`
+  Name      string  `json:"name"`
+  Price     int64   `json:"price"`
+  ImageUrl  string  `json:"image_url"`
+}
+```
+
