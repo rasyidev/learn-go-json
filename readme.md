@@ -35,3 +35,8 @@ type Product struct {
 - Data JSON dapat berasal dari input `io.Reader` seperti File, Network, Request Body, dll.
 - Package json memiliki fitur untuk membaca data tersebut dari Stream tanpa harus menyimpannya terlebih dahulu ke dalam variable
 - Menggunakan `json.NewDecoder(reader)` -> `Decode(interface{})`
+
+## Streaming Encoder
+- Menulis JSON langsung ke io.Writer
+- Tidak perlu menyimpan JSON ke variable untuk menyimpan string / bytes JSON-nya
+- Menggunakan `json.NewEncoder(interface{})` -> `Encode(interface{})`
